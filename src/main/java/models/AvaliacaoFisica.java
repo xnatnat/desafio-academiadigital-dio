@@ -22,7 +22,7 @@ public class AvaliacaoFisica extends BaseEntity {
 
     private double altura;
 
-    @ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne
     @JoinColumn(name = "aluno_id")
     private Aluno aluno;
 }

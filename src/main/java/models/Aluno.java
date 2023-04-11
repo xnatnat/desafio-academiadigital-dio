@@ -27,7 +27,7 @@ public class Aluno extends BaseEntity{
 
     private LocalDate dataDeNascimento;
 
-    @OneToMany(mappedBy = "aluno", fetch = FetchType.LAZY)
+    @OneToMany(mappedBy = "aluno", cascade = CascadeType.REMOVE, fetch = FetchType.LAZY)
     private Set<AvaliacaoFisica> avaliacoesFisicas;
 
 }
