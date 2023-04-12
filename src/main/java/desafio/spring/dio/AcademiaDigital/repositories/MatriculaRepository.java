@@ -1,6 +1,6 @@
-package repositories;
+package desafio.spring.dio.AcademiaDigital.repositories;
 
-import models.Matricula;
+import desafio.spring.dio.AcademiaDigital.models.Matricula;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

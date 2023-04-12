@@ -1,18 +1,17 @@
-package models;
+package desafio.spring.dio.AcademiaDigital.models;
 
 import jakarta.persistence.*;
 import lombok.*;
 
 import java.time.LocalDateTime;
 
-@Entity
-@Table(name = "cad_avaliacoes")
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @EqualsAndHashCode(callSuper = true)
-
+@Entity
+@Table(name = "cad_avaliacoes")
 public class AvaliacaoFisica extends BaseEntity {
 
     @Column(nullable = false)
@@ -22,7 +21,7 @@ public class AvaliacaoFisica extends BaseEntity {
 
     private double altura;
 
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "aluno_id")
     private Aluno aluno;
 }

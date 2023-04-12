@@ -1,4 +1,4 @@
-package models;
+package desafio.spring.dio.AcademiaDigital.models;
 
 import jakarta.persistence.*;
 import lombok.*;
@@ -6,14 +6,13 @@ import lombok.*;
 import java.time.LocalDate;
 import java.util.Set;
 
-@Entity
-@Table(name = "cad_alunos")
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @EqualsAndHashCode(callSuper = true)
-
+@Entity
+@Table(name = "cad_alunos")
 public class Aluno extends BaseEntity{
 
     @Column(nullable = false)

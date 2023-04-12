@@ -1,4 +1,4 @@
-package infra;
+package desafio.spring.dio.AcademiaDigital.infra.utils;
 
 import java.time.format.DateTimeFormatter;
 import java.util.Locale;

@@ -1,4 +1,4 @@
-package models;
+package desafio.spring.dio.AcademiaDigital.models;
 
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
